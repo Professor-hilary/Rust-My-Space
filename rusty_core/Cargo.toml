@@ -1,0 +1,12 @@
+[package]
+name = "rusty_core"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pyo3 = { version = "0.20", features = ["extension-module"] }
+ndarray = "0.15"  # For matrix ops
+rand = "0.8"      # Random actions for RL
+
+[lib]
+crate-type = ["cdylib"]  # Make it a Python module
